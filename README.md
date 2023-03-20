@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Fridge Management
+## Part 1: Ideation, Design, and Architecture
+### Project Proposal:
+1. Food waste is a significant problem in households and communities worldwide. Not only does it contribute to environmental degradation and resource depletion, but it also wastes money and a lack of access to healthy food for those in need. To address this issue, I would like to create a web application that manages household refrigerators better and minimize food waste. This web app will allow users to keep track of their food inventory, avoid waste, save money, and create healthy food habits. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The food management web app should provide users with the following functioning:
 
-## Available Scripts
+    a. Food Item Management: Users can easily add, edit, and remove food items into the database.
 
-In the project directory, you can run:
+    b. Inventory Tracking: The app allows users to check their food inventory by name, expiration date, price, category, or quantity of food items.
 
-### `npm start`
+    c. Remote Access: Users can view the contents of their fridges from anywhere and at any time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    d. Inventory Summary: The app summarizes the total number of items in the fridge, expired items, total purchases, number of food categories, and total quantity of each food item.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    e. Recipe Recommendations: The app offers a unique feature that provides recipes based on the food items users already have in their fridges, helping to reduce waste and save money.
 
-### `npm test`
+2. Wireframe and scenarios:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Scenario 1:**
 
-### `npm run build`
+Users insert new items into the input field; after clicking the add button, they should be able to view the food card that appears on the screen, and the summary will also update.
+<img alt="insert1" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/1.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The new added item show up in the third row
+<img alt="insert2" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/2.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Scenario 2:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+When users click on a food card, the information about that item will be shown in the input field. If they click the delete, the food card of that item will be deleted from the database, and the summary will also update.
 
-### `npm run eject`
+<img alt="delete1" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/5.png">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After clicking the delete button, the item should be removed from the database
+<img alt="delete2" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/6.png">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Scenario 3:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+When users click on a food card, the information about that item will be shown in the input field. They can update the food database by changing any input info, and clicking adds button again. The food card and summary will also be updated. 
+<img alt="update" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/3.png">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Scenario 4:**
 
-## Learn More
+When users submit a list of ingredients in the input field, the website will generate a recipe that is close to what users have entered with the recipe name and a list of instructions.
+<img alt="update" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/9.png">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+After clicking the submit button
+<img alt="update" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/8.png">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Class Diagram:
+<img alt="update" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/10.png">
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Part 2: Implementation
+### Dependencies that need to be installed:
+- Install Node.js
+- Npx: npm install -g npm
+- firebase: npm install firebase
+- React router: npm install react-router-dom
+- React Calendar: npm install react-calendar
+### Run the program:
+Download this package into your computer. Open the project in any IDE (this project originally developed using VSCocde), then navigate to **App.js** file and run the following command, **npm start**, in the terminal.
