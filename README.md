@@ -50,6 +50,14 @@ After clicking the submit button
 3. Class Diagram:
 <img alt="update" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/10.png">
 
+4. Database Schema:
+<img alt="database" src="https://github.com/chloeNgo99/Fridge-Management/blob/main/Demo%20pics/Screenshot%202023-03-19%20at%208.05.37%20PM.png" >
+
+5. Third party components that I will be using in this project are:
+ - React
+ - Firebase
+ - Rapidapi
+
 ## Part 2: Implementation
 ### Dependencies that need to be installed:
 - Install Node.js
